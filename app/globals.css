@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3c7030; border-radius: 2px; }
+
+/* Status badge colours */
+.status-overdue  { @apply bg-red-900/60 text-red-300 border border-red-700/50; }
+.status-due-soon { @apply bg-amber-900/60 text-amber-300 border border-amber-700/50; }
+.status-ok       { @apply bg-leaf-900/60 text-leaf-300 border border-leaf-700/50; }
+
+/* Card base */
+.plant-card {
+  @apply rounded-2xl bg-leaf-900/40 border border-leaf-800/50 backdrop-blur-sm;
+}
+
+/* Task pill */
+.task-pill {
+  @apply flex items-center gap-2 px-3 py-2 rounded-xl text-sm;
+  @apply bg-leaf-900/60 border border-leaf-800/40;
+  @apply transition-all duration-200 active:scale-95 cursor-pointer;
+}
+
+.task-pill:hover {
+  @apply bg-leaf-800/60 border-leaf-700/60;
+}
+
+/* Safe area insets for iPhone notch */
+.safe-top    { padding-top: max(1rem, env(safe-area-inset-top)); }
+.safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
