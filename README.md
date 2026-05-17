@@ -3,7 +3,7 @@
 A free PWA for tracking watering, repotting, and care for your indoor plants.
 Built for a Melbourne apartment with a NW-facing window, tuned for Southern Hemisphere seasons.
 
-## Features
+## Features 
 
 - 🌱 **6 plants pre-loaded** with Melbourne winter-adjusted care schedules
 - 💧 **Log care** (water, repot, fertilise, mist, wipe, health check) — shared in real time
